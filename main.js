@@ -13,10 +13,14 @@ if (PrimoNumero > SecondoNumero) {
   NumeroPiuGrande = SecondoNumero;
   NumeroPiuPiccolo = PrimoNumero;
 } else {
-  allert("i numeri sono uguali");
+  alert("i numeri sono uguali");
 }
-
+// random
 const NumeroRandom =
   Math.floor(Math.random() * NumeroPiuGrande) + NumeroPiuPiccolo;
 
-alert(NumeroRandom);
+if (isNaN(NumeroRandom)) {
+  alert("Riprova");
+} else {
+  alert("Ecco il numero: " + NumeroRandom);
+}
