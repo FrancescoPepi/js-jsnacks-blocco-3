@@ -43,15 +43,36 @@
 
 // ES 3
 
+// const container = [];
+
+// let sum = 0;
+
+// while (sum < 50) {
+//   const numeroTemporaneo = parseInt(prompt("inserisci un numero"));
+//   sum += numeroTemporaneo;
+//   if (sum < 50) {
+//     container.push(numeroTemporaneo);
+//   }
+// }
+
+// console.log(sum);
+// console.log(container);
+
+// ES 4
+
 const container = [];
 
-let numero = 0;
+let sum = 0;
 
-while (numero < 50) {
+while (sum < 50) {
   const numeroTemporaneo = parseInt(prompt("inserisci un numero"));
   container.push(numeroTemporaneo);
-  numero += numeroTemporaneo;
-}
 
-console.log(numero);
-console.log(container);
+  sum += numeroTemporaneo;
+}
+console.log(container.length);
+console.log(sum);
+
+const media = sum / container.length;
+
+console.log(media);
