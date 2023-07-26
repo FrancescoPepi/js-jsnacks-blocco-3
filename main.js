@@ -45,14 +45,9 @@
 
 const container = [];
 
-numero = 0;
+let numero = 0;
 
-do {
-  const numeroTemporaneo = parseInt(prompt("inserisci un numero"));
-  container.push(numeroTemporaneo);
-  numero += numeroTemporaneo;
-} while (numero < 50);
-{
+while (numero < 50) {
   const numeroTemporaneo = parseInt(prompt("inserisci un numero"));
   container.push(numeroTemporaneo);
   numero += numeroTemporaneo;
