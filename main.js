@@ -60,19 +60,34 @@
 
 // ES 4
 
-const container = [];
+// const container = [];
 
-let sum = 0;
+// let sum = 0;
 
-while (sum < 50) {
-  const numeroTemporaneo = parseInt(prompt("inserisci un numero"));
-  container.push(numeroTemporaneo);
+// while (sum < 50) {
+//   const numeroTemporaneo = parseInt(prompt("inserisci un numero"));
+//   container.push(numeroTemporaneo);
 
-  sum += numeroTemporaneo;
+//   sum += numeroTemporaneo;
+// }
+// console.log(container.length);
+// console.log(sum);
+
+// const media = sum / container.length;
+
+// console.log(media);
+
+// ES 5
+
+// Trovare gli errori nel seguente codice:
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+let evenNumbers = [];
+for (let i = 0; i < numbers.length - 1; i++) {
+  if (numbers[i] % 2 == 0) {
+    evenNumbers.push(i);
+  }
 }
-console.log(container.length);
-console.log(sum);
+console.log(evenNumbers);
 
-const media = sum / container.length;
-
-console.log(media);
+// dovrebbe restituire [1,3,5]
